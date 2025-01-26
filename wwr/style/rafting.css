@@ -1,0 +1,130 @@
+:root {
+  --primary-blue: rgb(46, 121, 190); /* Deep blue for trust and water depth */
+  --accent-cyan: rgb(196, 255, 247); /* Vibrant cyan for water energy */
+  --nature-green: rgb(138, 231, 138); /* Forest green for nature vibes */
+  --nature-white: rgb(241, 241, 241); /* Forest green for nature vibes */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent-cyan);
+}
+
+header {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 160px;
+  height: 100px;
+}
+
+header nav {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.hero {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  align-self: center;
+  position: absolute;
+  margin-top: 3rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.hero article {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rem;
+}
+
+.hero article img {
+  width: 250px;
+  height: 200px;
+  margin-right: 1rem;
+  margin-left: 10rem;
+  filter: brightness(80%);
+}
+
+.hero article p {
+  font-size: 1.5rem;
+  margin-right: 10rem;
+}
+
+.History {
+  background-color: var(--nature-green);
+  color: white;
+  padding: 10rem;
+  text-align: center;
+}
+
+.Adventures {
+  background-color: var(--primary-blue);
+  color: var(--nature-white);
+  padding: 5rem;
+  text-align: center;
+}
+
+.Adventures h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Adventures img {
+  width: 500px;
+  height: 300px;
+}
+
+footer {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-media-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem;
+  fill: white;
+}
