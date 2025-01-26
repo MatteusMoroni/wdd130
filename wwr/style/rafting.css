@@ -1,8 +1,9 @@
 :root {
-  --primary-blue: rgb(46, 121, 190); /* Deep blue for trust and water depth */
-  --accent-cyan: rgb(196, 255, 247); /* Vibrant cyan for water energy */
-  --nature-green: rgb(138, 231, 138); /* Forest green for nature vibes */
-  --nature-white: rgb(241, 241, 241); /* Forest green for nature vibes */
+  --primary-blue: #1a4067; /* Deep blue for trust and water depth */
+  --accent-cyan: #59a0b5; /* Vibrant cyan for water energy */
+  --nature-green: #a6a26a; /* Forest green for nature vibes */
+  --nature-white: #d2ccbe; /* Forest green for nature vibes */
+  --nature-brown: #a7713f; /* Forest green for nature vibes */
 }
 
 a {
@@ -11,10 +12,20 @@ a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Farsan", serif;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
   background-color: var(--accent-cyan);
+}
+
+.hero h1,
+.History h2,
+.Adventures h2 {
+  font-family: "Trade Winds", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 header {
