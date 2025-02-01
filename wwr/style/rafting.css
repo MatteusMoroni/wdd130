@@ -1,7 +1,11 @@
 :root {
-  --primary-blue: #1a4067; /* Deep blue for trust and water depth */
-  --accent-cyan: #59a0b5; /* Vibrant cyan for water energy */
-  --nature-green: #a6a26a; /* Forest green for nature vibes */
+  --primary-blue: hsl(
+    210,
+    59.7%,
+    25.3%
+  ); /* Deep blue for trust and water depth */
+  --accent-cyan: hsl(194, 38.3%, 52.9%); /* Vibrant cyan for water energy */
+  --nature-green:rgb(117, 113, 60); /* Forest green for nature vibes */
   --nature-white: #d2ccbe; /* Forest green for nature vibes */
   --nature-brown: #a7713f; /* Forest green for nature vibes */
 }
@@ -20,23 +24,47 @@ body {
 }
 
 .hero h1,
-.History h2,
+.history h2,
 .Adventures h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
   font-family: "Trade Winds", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
+  color: white;
 }
 
 header {
   background-color: var(--primary-blue);
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
   align-items: center;
+  justify-content: start;
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 5rem;
+}
+
+.header__title h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: "Trade Winds", serif;
+}
+
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
 }
 
 header img {
@@ -44,69 +72,98 @@ header img {
   height: 100px;
 }
 
-header nav {
+.header__navbar nav {
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 1rem;
 }
 
 .hero {
-  position: relative;
+  background-image: url("../images/rafting16_1024.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
+}
+
+.hero-content {
+  background-color: rgba(26, 64, 103, 0.9);
+  padding: 0 2rem;
+  border-radius: 10px;
+  width: 80%;
+  height: 60%;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin: 0;
+  margin: 1rem 0 2rem 0;
   align-self: center;
-  position: absolute;
-  margin-top: 3rem;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(50%);
 }
 
 .hero article {
-  position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 30rem;
+  margin-top: 2rem;
 }
 
 .hero article img {
-  width: 250px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   margin-right: 1rem;
   margin-left: 10rem;
-  filter: brightness(80%);
+
+  border-radius: 10px;
 }
 
 .hero article p {
   font-size: 1.5rem;
   margin-right: 10rem;
+  text-align: left;
 }
 
-.History {
+.history {
   background-color: var(--nature-green);
   color: white;
-  padding: 10rem;
+  padding: 2rem;
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.history__content {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.history img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.history__img-container {
+  align-items: center;
+  justify-content: center;
 }
 
 .Adventures {
@@ -116,14 +173,30 @@ header nav {
   text-align: center;
 }
 
+.Adventures__content {
+  display: flex;
+  flex direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  max-width: 100%;
+
+}
+
 .Adventures h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
 .Adventures img {
-  width: 500px;
-  height: 300px;
+  flex: 1 1 100%; 
+  min-height: 200px;
+  max-height: 300px;
+  min-width: 100px;
+  max-width: 300px;
 }
 
 footer {
@@ -131,11 +204,20 @@ footer {
   color: white;
   padding: 1rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  padding: 2rem;
 }
 
-.social-media-icon {
-  width: 50px;
-  height: 50px;
-  margin: 0 1rem;
-  fill: white;
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer nav a span i {
+  width: 1.5rem;
+  height: 1.5rem;
 }
