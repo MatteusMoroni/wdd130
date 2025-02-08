@@ -8,9 +8,9 @@
 }
 
 :root {
-  --primary-blue: hsl(210, 59.7%, 25.3%);
-  --accent-cyan: hsl(193, 66.80%, 36.70%);
-  --nature-green: rgb(0, 0, 78);
+  --primary-blue: #0C2D48;
+  --accent-cyan:rgb(16, 97, 145);
+  --nature-green:rgb(26, 94, 133);
   --nature-white:
    #d2ccbe;
   --nature-brown:rgb(102, 59, 19);
@@ -185,11 +185,13 @@ header img {
   color: var(--nature-white);
   padding: 5rem;
   text-align: center;
+  width: 100%;
 }
 
 .Adventures__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -242,7 +244,7 @@ footer nav a img {
 }
 
 .contact__company-info-section {
-  background-color: var(--accent-cyan);
+  background-color: var(prim);
   width: 100%;
   max-width: 100%;
   min-height: 50vh;
