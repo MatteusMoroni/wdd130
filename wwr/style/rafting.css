@@ -9,10 +9,11 @@
 
 :root {
   --primary-blue: hsl(210, 59.7%, 25.3%);
-  --accent-cyan: hsl(194, 38.3%, 52.9%);
-  --nature-green: rgb(71, 55, 20);
-  --nature-white: #d2ccbe;
-  --nature-brown: #a7713f;
+  --accent-cyan: hsl(193, 66.80%, 36.70%);
+  --nature-green: rgb(0, 0, 78);
+  --nature-white:
+   #d2ccbe;
+  --nature-brown:rgb(102, 59, 19);
 }
 
 * {
@@ -26,7 +27,7 @@ a {
 
 body {
   font-family: "Be Vietnam Pro", serif;
-  font-size: 10px;
+  font-size: 1em;
   margin: 0;
   padding: 0;
   background-color: var(--accent-cyan);
@@ -234,7 +235,8 @@ footer nav a img {
 
 .divider {
   border: none;
-  border-top: 2px solid var(--nature-white);
+
+  border-top: 2px solid white;
   margin: 30px 0;
   width: 70%;
 }
@@ -250,12 +252,13 @@ footer nav a img {
   align-items: flex-start;
   justify-items: center;
   padding: 1rem 0rem 1rem 1rem;
-  margin: 1rem 0rem;
+  margin: 0rem;
 }
 
 .contact__company-info {
   background-color: var(--primary-blue);
   flex: 1 300px; /* Flexible item with a base width */
+  height: 300px;
   max-width: 35%;
   color: white;
   border-radius: 10px;
@@ -314,7 +317,7 @@ footer nav a img {
 
 .employee {
   background-color: var(--primary-blue);
-  color: var(--nature-white);
+  color: white;
   padding: 1rem;
   border-radius: 10px;
 
@@ -330,8 +333,9 @@ footer nav a img {
 
 .contact-form {
   background-color: var(--primary-blue);
-  color: var(--nature-white);
+  color: #ffffff;
   padding: 1rem;
+  margin-bottom: 2rem;
   border-radius: 10px;
   width: 900px;
   max-width: 100%;
