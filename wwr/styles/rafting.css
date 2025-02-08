@@ -249,7 +249,7 @@ footer nav a img {
 }
 
 .contact__company-info-section {
-  background-color: var(prim);
+  background-color: var(--accent-cyan);
   width: 100%;
   max-width: 100%;
   min-height: 50vh;
