@@ -183,7 +183,7 @@ header img {
 .Adventures {
   background-color: var(--primary-blue);
   color: var(--nature-white);
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
   width: 100%;
 }
@@ -194,10 +194,15 @@ header img {
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0 2rem;
   overflow: hidden;
   max-width: 100%;
+}
+
+.Adventures__content figure {
+  box-sizing: border-box;
+  width: 200px;
 }
 
 .Adventures h2 {
