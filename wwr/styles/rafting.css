@@ -8,16 +8,17 @@
 }
 
 :root {
-  --primary-blue: #0C2D48;
-  --accent-cyan:rgb(16, 97, 145);
-  --nature-green:rgb(26, 94, 133);
-  --nature-white:
-   #d2ccbe;
+  --primary-blue:rgb(39, 68, 93);
+  --accent-cyan: rgb(73, 125, 116);
+  --nature-green:rgb(113, 187, 178);
+  --nature-white: rgb(239, 233, 213);
   --nature-brown:rgb(102, 59, 19);
 }
 
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -30,7 +31,7 @@ body {
   font-size: 1em;
   margin: 0;
   padding: 0;
-  background-color: var(--accent-cyan);
+  background-color: var(--nature-white);
 }
 
 main {
@@ -40,6 +41,11 @@ main {
   justify-content: center;
   width: 100%;
 }
+
+
+
+
+
 
 .hero h1,
 .history h2,
@@ -105,6 +111,333 @@ header img {
   align-items: center;
   box-sizing: border-box;
 }
+
+
+/* HOME */
+
+.index__hero{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url('../images/baner_1.jpg') no-repeat center center/cover;
+
+
+}
+
+.index__hero-heading{
+  position: absolute;
+  width: 60%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  -webkit-text-stroke: 1px black; 
+  text-shadow: 2px 2px 4px var(--nature-brown);
+  font-border: 2px solid var(--nature-brown);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.index__newsletter-cta{
+  margin: 2rem;
+  padding:1rem 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; 
+  align-items: center;
+  justify-items: center;
+  gap: 50px;
+
+}
+
+.index__newsletter-cta form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.newsletter{
+  padding-right: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+
+.index__newsletter-cta h2, .cta-content h2, .trips_images h2 {
+  font-size: 2rem;
+  font-family: "Be Vietnam Pro", serif;
+  color: var(--nature-brown);
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+
+
+/* Form Styling */
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid var(--nature-brown);
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color: var(--nature-brown)  ; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:var(--nature-brown);
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:var(--nature-brown); 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+/*  ====== BUTOM FORM ======= */
+
+.button {
+  background-color: var(--nature-brown); 
+  margin-top: 25px; 
+  border: 0px;
+  outline: 0px;
+  color: var(--nature-white);
+  font-size: 1.2rem;
+  font-weight: 900;
+  width: 170px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.liquid {
+  background-color: var(--primary-blue);
+  width: 240px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 5px -5px 25px #104e81,
+  inset -5px 0px 25px #104e81;
+}
+
+.liquid::after {
+  content: '';
+  width: 450px;
+  height: 400px;
+  background: var(--nature-brown);
+  z-index: 1;
+  position: absolute;
+  left: -110px;
+  top: -380px;
+  border-radius: 45%;
+  animation: animate 5s linear 2s infinite;
+}
+
+.liquid::before {
+  content: '';
+  width: 450px;
+  height: 410px;
+  background-color: var(--accent-cyan);
+  z-index: 1;
+  position: absolute;
+  left: -110px;
+  top: -380px;
+  border-radius: 40%;
+  animation: animate 5s linear 1.8s infinite;
+}
+
+.btn-txt {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*  ====== CTA  HOME PAGE ======= */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.cta-content {
+  max-width: 50%;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: var(--nature-brown);
+  margin: 10px 0;
+}
+
+.form-button {
+  display: inline-block;
+  padding: 12px 24px;
+  width: 300px;
+  background-color: var(--primary-blue);
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+}
+
+.form-button:hover {
+  background-color: var(--accent-cyan);
+  border: none;
+}
+
+.cta-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*  ====== IMAGES SECTION ======= */
+
+.trips_images{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home_images-section{
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+}
+
+.home_images{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.home_images img{
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.home_images figcaption {
+  color: var(--nature-brown);
+}
+
+
+
+
+
+/* About Us */
+
 
 .hero {
   background-image: url("../images/rafting16_1024.jpg");
