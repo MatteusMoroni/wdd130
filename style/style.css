@@ -12,7 +12,7 @@ aside {
   border: 0.5px solid rgb(0 0 0 / 0.1);
   padding: 1rem;
   background-color: #eee;
-  color: #333s;
+  color: #3333;
   text-align: center;
 }
 
@@ -28,6 +28,6 @@ main img {
 
 footer {
   margin-top: 2rem;
-  bordert-top: 1px solid rgb(0 0 0 / 0.5);
+  border-top: 1px solid rgb(0 0 0 / 0.5);
   text-align: center;
 }
