@@ -28,8 +28,8 @@ aside {
   margin: 1rem;
   border: 0.5px solid rgb(0 0 0 / 0.1);
   padding: 1rem;
-  background-color: #eee;
-  color: #fffff;
+  background-color: 220, 238, 250;
+  color: 255, 255, 255;
   text-align: center;
 }
 
