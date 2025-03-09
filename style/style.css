@@ -6,13 +6,30 @@ p {
   padding: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+nav a{
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
 aside {
   width: 20rem;
   margin: 1rem;
   border: 0.5px solid rgb(0 0 0 / 0.1);
   padding: 1rem;
   background-color: #eee;
-  color: #f4f4f8;
+  color: #fffff;
   text-align: center;
 }
 
