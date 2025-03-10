@@ -26,10 +26,10 @@ h1 {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 0.5px solid rgb(0 0 0 / 0.1);
+  border: 0.5px solid rgb(244 186 161/ 0.1);
   padding: 1rem;
-  background-color: 220, 238, 250;
-  color: 255, 255, 255;
+  background-color: #ffe9d7;
+  color: #592207;
   text-align: center;
 }
 
